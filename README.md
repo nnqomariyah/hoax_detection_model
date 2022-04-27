@@ -1,19 +1,27 @@
 # hoax_detection_model
-Python version 3.7 or above
+### Python version 3.7 or above
 
 Python library requirement:
-
+```
 pip3 install pickle
-
 pip3 install pandas
-
 pip3 install sklearn
-
 pip3 install Sastrawi
+```
 
 
-How to read the input: save file in csv
+If you want to predict a set of text document, please change the following code into your csv filename. Store different text data separated by each line. 
 
-then change the name of csv in the following line according to your csv file
-``X_test = pd.read_csv('testdata.csv', error_bad_lines=False, encoding='latin1')''
+```
+X_test = pd.read_csv('testdata.csv', error_bad_lines=False, encoding='latin1')
+```
+then change the following code: 
+```
+X_tf1 = tf1_new.fit_transform([inputdata])
+```
+into:
+```
+X_tf1 = tf1_new.fit_transform(X_test)
+```
 
+if you just want to use one input, store the text data into variable ```inputdata```
