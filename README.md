@@ -8,7 +8,7 @@ pip3 install pandas
 pip3 install sklearn
 pip3 install Sastrawi
 ```
-
+The main file is in: ``nnq.py``
 
 If you want to predict a set of text document, please change the following code into your csv filename. Store different text data separated by each line. 
 
